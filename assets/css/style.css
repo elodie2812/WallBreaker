@@ -1,0 +1,28 @@
+body {
+    background-color: #ed5d1a;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+font-family: 'Montserrat', sans-serif;
+font-size: 1.2em;
+cursor: url(../images/cursor1.png), auto;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    color: rgba(186, 0, 0,);
+}
+
+/** { 
+    padding: 130; margin: 130; 
+}*/
+
+canvas { 
+    background: url('../images/space.png'); display: block; margin: 0 auto; 
+}     
+
+canvas {
+    display: none;
+}
+
+
+
