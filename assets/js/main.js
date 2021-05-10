@@ -2,8 +2,11 @@ $(function() {
 
   $("#StartButton").click(function () {
       $("#SplashScreen").hide();
-      $("#myCanvas").show();
-  });
+      $("#myCanvas").show()
+      
+       draw();
+    });
+
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
   var ballRadius = 10;
@@ -24,7 +27,7 @@ $(function() {
   var brickOffsetTop = 30;
   var brickOffsetLeft = 30;
   var score = 0;
-  var lives = 5;
+  var lives = 3;
 
   var bricks = [];
   for(var c=0; c<brickColumnCount; c++) {
@@ -37,6 +40,7 @@ $(function() {
   document.addEventListener("keydown", keyDownHandler, false);
   document.addEventListener("keyup", keyUpHandler, false);
   document.addEventListener("mousemove", mouseMoveHandler, false);
+  document.addEventListener("draw", draw, false);
 
   function keyDownHandler(e) {
     if(e.keyCode == 39) {
@@ -168,6 +172,5 @@ $(function() {
     requestAnimationFrame(draw);
   }
 
-  draw();
 
 })
